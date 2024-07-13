@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    height: 100vh;
+    background:linear-gradient(135deg,#202020,#00661a)
+}
+
+.pesquisar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.inputPesquisar {
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    color: black;
+}
+
+.pesquisarBtn {
+    background-color: #015f01;
+    color: white;
+    font-weight: bold;
+    border: none;    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 27px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.pesquisarBtn i {
+    font-size: 1.2rem;
+}
+/*///////////////////////////////////////////////////*/
+nav.menu-lateral{
+    width: 60px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 4px 0 0 #015f01;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+.logo{
+    width: 50px;
+    padding-left: 10px;
+    cursor: pointer;
+    transform: translate(-30%);
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.item-menu:hover{
+    background: #015f01;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 10px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-meu a .icon >i{
+    font-size: 30px;
+}
+
+
+/*///////////////////////////*/
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    padding:20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background:rgba(0, 0, 0, 0.5);
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+.historia h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    margin-bottom: 20px;
+    text-indent: 2em;
+}
+/*//////////////////////////*/
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-left: -20px;
+    padding:20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background:rgba(0, 0, 0, 0.5);
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+/*///////////////////////////////////////////////////*/
+
+@media (max-width: 430px) {
+
+    .historia{
+        padding-left: 50px;
+    }
+
+    .opcoes{
+        background-color: transparent;
+        border: none;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+    }
+
+    .logo{
+        width: 40px;
+        padding-left: 10px;
+        cursor: pointer;
+        transform: translate(-30%);
+        margin-bottom: 1px;
+    }
+
+    nav.menu-lateral{
+        width: 40px;
+        height: 100%;
+        background-color: #202020;
+        padding: 40px 0 40px 1%;
+        box-shadow: 2px 0 0 #015f01;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    .Cadastrar{
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width: 960px), (min-width: 430px) {
+    .historia {
+        padding-left: 80px;
+    }
+}
+
+/*/////////////////////////////////////////////*/
+
+.voltar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.Cadastrar{
+    background-color: rgba(0,0, 0,0.3);
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 60PX;
+    color:white;
+    text-align: center;
+}
+
+#nome{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+#nome::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+#sobre_nome{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+#sobre_nome::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+#email{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+#email::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+#dataNasc{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    width: 185px;
+}
+
+#dataIngre{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    width: 185px;
+}
+
+#dataInves{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    width: 185px;
+}
+
+#submit{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}

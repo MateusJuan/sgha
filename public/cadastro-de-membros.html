@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="logo-herois.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Cadastro</title>
+</head>
+<body>
+    <a href="liderança.html">
+        <button  class="voltar">
+            <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+    </a>
+
+    <div class="Cadastrar">
+        <h2 class="Membro">Cadastrar Membro</h2>
+        <form action="cadastrar_membro.php" method="POST">
+            <label>Liderança:</label>
+            <input type="checkbox" name="liderança" id="liderança">
+            <label>Desbravador:</label>
+            <input type="checkbox" name="desbravador" id="desbravador">
+            <br><br>
+            <input type="text" name="nome" id="nome" required placeholder="Nome">
+            <br><br>
+            <input type="text" name="sobre_nome" id="sobre_nome" required placeholder="Sobrenome">
+            <br><br>
+            <input type="email" name="email" id="email" required placeholder="Email">
+            <br><br>
+            <label>Data de Nascimento:</label>
+            <br>
+            <input type="date" name="dataNasc" id="dataNasc" required>
+            <br><br>
+            <label>Data de Ingresso:</label>
+            <br>
+            <input type="date" name="dataIngre" id="dataIngre" required>
+            <br><br>
+            <label>Data de Investidura:</label>
+            <br>
+            <input type="date" name="dataInves" id="dataInves" required>
+            <br><br>
+            <label>Não batizado:</label>
+            <input type="checkbox" name="nBatizado" id="nBatizado">
+            <label>Batizado</label>
+            <input type="checkbox" name="Batizado" id="Batizado">
+            <br><br>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body{
+    background-image: url(Design\ sem\ nome\ \(3\).jpg);
+    /*background:linear-gradient(135deg,#202020,#00661a) ;*/
+    font-family: sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.voltar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    padding: 10px;
+}
+
+.voltar:hover{
+    background: transparent;
+    color: black;
+    transition: all 1s;
+}
+
+.login{
+    background-color: rgba(0,0, 0,0.3);
+    position: absolute;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80PX;
+    color:white;
+    text-align: center;
+    width: 250px;
+}
+img{
+    height: 200px;
+}
+.nome-conta{
+    background-color: rgba(0,0, 0,0.5);
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    color: white;
+    width: 200px;
+}
+.nome-conta::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.senha{
+    background-color: rgba(0,0, 0,0.5);
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    color: white;
+    width: 200px;
+}
+.senha::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.entrar{
+    background-color: #292622;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 200px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold
+}
+
+ul{
+    list-style-type: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 15px;
+}
+
+.lider{
+    height: 20px;
+}
+.lider1{
+    height: 15px;
+}
+/*//////////////////////////////*/
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(255, 255, 255); }
+}
+
+.escrever-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escrever-efeito{
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgb(255, 255, 255);
+    width: 100%;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.escrever-efeito span {
+    display: block;
+}
+
+.escrever-efeito::after {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    margin-left: 2px;
+    border-right: 3px solid;
+    animation: none;
+}
+
+
+/*//////////////////////////////////////////*/
+
+@media (max-width: 430px) {
+
+    body{
+        background-image: url("Design sem nome (1).png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .login{
+        background-color: rgba(0,0, 0,0.3);
+        position: absolute;
+        border-radius: 15px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 20PX;
+        color:white;
+        text-align: center;
+        width: 250px;
+    }
+
+    .voltar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: white;
+        padding: 10px;
+    }
+
+    img{
+        height: 150px;
+        padding: 10px;
+    }
+
+
+}
+  
