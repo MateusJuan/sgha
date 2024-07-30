@@ -21,12 +21,12 @@ $sql = "INSERT INTO usuarios (nome, sobre_nome, email, dataNasc, dataIngre, data
 if ($conexao->query($sql) === TRUE) {
     echo "<script>
         alert('Cadastro realizado com sucesso!');
-        window.location.href = 'index.html';
+        window.location.href = '../1.html';
     </script>";
 } else {
     echo "<script>
         alert('Erro ao realizar cadastro: " . $conexao->error . "');
-        window.location.href = 'cadastro_de_membros.html';
+        window.location.href = '../cadastro_de_membros.html';
     </script>";
 }
 

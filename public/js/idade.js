@@ -9,7 +9,6 @@ function calcularIdade(dataNascimento) {
     }
     return idade;
   }
-  
   // Função para atualizar a idade a cada ano
   function atualizarIdade() {
     var dataNascimento = "1999-04-4"; // Data de nascimento no formato "YYYY-MM-DD"
@@ -36,9 +35,9 @@ function entrar() {
   const senha = document.getElementById("senha").value;
 
   if (email === "kkk@gmail.com" && senha === "123456789") {
-      window.location.href = "unidades.html";
+      window.location.href = "../unidades.html";
   } else {
-      alert("Email ou Senha incorretos! Tente Novamente ou ou contate o suporte");
+      alert("Email ou Senha incorretos! Tente Novamente ou contate o suporte");
   
     }  
 }
@@ -48,9 +47,9 @@ function entrar_diretoria(){
   const senha = document.getElementById("senha").value;
 
   if (codigo === "001" && senha === "123456789") {
-      window.location.href = "diretoria-index.html";
+      window.location.href = "../diretoria-index.html";
   } else {
-      alert("Email ou Senha incorretos! Tente Novamente ou ou contate o suporte");
+      alert("Email ou Senha incorretos! Tente Novamente ou contate o suporte");
   
     }  
 }
@@ -60,9 +59,9 @@ function entrar_lideranca(){
   const senha = document.getElementById("senha").value;
 
   if (codigo === "011" && senha === "123456789") {
-      window.location.href = "unidades.html";
+      window.location.href = "../unidades.html";
   } else {
-      alert("Email ou Senha incorretos! Tente Novamente ou ou contate o suporte");
+      alert("Email ou Senha incorretos! Tente Novamente ou contate o suporte");
   
     }  
 }
@@ -72,9 +71,9 @@ function entrar_dbv(){
   const senha = document.getElementById("senha").value;
 
   if (codigol === "011" && senha === "123456789") {
-      window.location.href = "unidades.html";
+      window.location.href = "../unidades.html";
   } else {
-      alert("Email ou Senha incorretos! Tente Novamente ou ou contate o suporte");
+      alert("Email ou Senha incorretos! Tente Novamente ou contate o suporte");
   
     }  
 }
