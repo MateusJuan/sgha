@@ -11,30 +11,19 @@
 <body class="background-image">
 
     <div class="login" id="entrar-club">
-        <!--<button onclick="voltar()" class="voltar">
-            <span class="material-symbols-outlined">arrow_back</span>
-        </button>-->
         <img src="./img/logo-herois.ico" class="imgLogin">
-        <ul>
-            <a href="../public/telas-login/diretoria-login.html">
-                <li> <img src="./img/lider.png" class="lider"> DIRETORIA</li>
-            </a>
-            <a href="../public/telas-login/lideranca-login.html">
-                <li> <img src="./img/lideranca.png" class="lider"> LIDERANÇA</li>
-            </a>
-            <a href="../public/telas-login/desbravadores-login.html">
-                <li> <img src="./img/caque1.png" class="lider1"> DESBRAVADORES</li>
-            </a>
-            <a href="../public/telas-login/pais.html">
-                <li><span class="material-symbols-outlined">
-                    family_restroom
-                    </span> PAIS DOS DESBRAVADORES</li>
-            </a>
+        <form id="login-form">
+            <input type="text" class="nome-conta" placeholder="seu código de usuário" id="codigo" required>
+            <input type="password" class="senha" placeholder="Senha" id="senha" required><br>
+            <input type="submit" class="entrar" value="Entrar">
+        </form>
 
-        
-        </ul>
+        <div>
+            <a href="">Esqueceu a Senha?</a>
+        </div>
     </div>
 
-    <script src="./js/idade.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
