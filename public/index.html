@@ -7,19 +7,28 @@
     <link rel="shortcut icon" href="./img/logo-herois.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/entrar.css">
     <title>Entrar</title>
+
+    <style>
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+
 </head>
 <body class="background-image">
 
     <div class="login" id="entrar-club">
-        <img src="./img/logo-herois.ico" class="imgLogin">
-        <form id="login-form">
-            <input type="text" class="nome-conta" placeholder="seu código de usuário" id="codigo" required>
-            <input type="password" class="senha" placeholder="Senha" id="senha" required><br>
+        <img src="./img/logo-herois.ico" class="imgLogin" alt="Logo do Heróis">
+        <form id="login-form" action="" method="GET">
+            <input type="text" class="nome-conta" placeholder="Seu código de usuário" id="codigo" name="codigo" required>
+            <input type="password" class="senha" placeholder="Senha" id="senha" name="senha" required><br>
             <input type="submit" class="entrar" value="Entrar">
         </form>
 
         <div>
-            <a href="">Esqueceu a Senha?</a>
+            <a href="/recuperar-senha">Esqueceu a Senha?</a>
         </div>
     </div>
 
